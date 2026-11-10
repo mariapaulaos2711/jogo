@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitty Farm Simulator ♡</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">🎀 Kitty Farm 🎀</div>
+    <p>♡ Seu cantinho mágico de gatinhos ♡</p>
+</header>
+
+<main>
+
+    <section class="wallet">
+        <div>🍓 <span id="coins">0</span></div>
+        <div>💗 <span id="gems">0</span></div>
+        <div>🐾 <span id="power">1</span></div>
+    </section>
+
+    <section class="welcome">
+        <h2>🌸 Bem-vinda ao Kitty World! 🌸</h2>
+        <p>Farme moranguinhos e cuide dos seus gatinhos!</p>
+    </section>
+
+    <section class="farm">
+        <div class="farm-title">
+            <h2>🐱 Seu cantinho de farm</h2>
+            <p>Seus gatinhos estão trabalhando!</p>
+        </div>
+
+        <div class="big-cat" id="clickButton">
+            <span>🐱</span>
+            <p>CLIQUE NO GATINHO!</p>
+        </div>
+
+        <p class="farm-info">🍓 Clique para ganhar moranguinhos!</p>
+
+        <div class="level">
+            Nível <span id="level">1</span>
+        </div>
+
+        <div class="progress">
+            <div id="progressBar"></div>
+        </div>
+    </section>
+
+    <section class="panel">
+        <h2>🥚 Ovinhos mágicos</h2>
+        <p>Choque um ovo e descubra seu novo amiguinho!</p>
+
+        <div class="egg-container" id="eggs"></div>
+    </section>
+
+    <section class="panel">
+        <h2>🛍️ Loja fofinha</h2>
+        <div id="shop" class="shop-grid"></div>
+    </section>
+
+    <section class="panel">
+        <h2>🐾 Seus gatinhos</h2>
+        <p>Equipe seus melhores amiguinhos para farmar!</p>
+        <div id="inventory" class="pet-grid"></div>
+        <p id="equipInfo"></p>
+    </section>
+
+    <section class="panel">
+        <h2>🎀 Melhorias</h2>
+        <div id="upgrades" class="shop-grid"></div>
+    </section>
+
+    <section class="panel">
+        <h2>🔄 Renascimento mágico</h2>
+        <p>Recomece sua aventura e ganhe mais multiplicadores!</p>
+        <button class="pink-button" id="rebirthButton">
+            Fazer Rebirth ♡
+        </button>
+        <p id="rebirthInfo"></p>
+    </section>
+
+    <footer>
+        <button onclick="saveGame()">💾 Salvar</button>
+        <button onclick="resetGame()">🗑️ Resetar</button>
+    </footer>
+
+</main>
+
+<div id="notification"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

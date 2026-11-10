@@ -1,0 +1,346 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background: #fff0f7;
+    color: #a64d78;
+    min-height: 100vh;
+}
+
+header {
+    background: linear-gradient(135deg, #ffadd2, #ff77b7);
+    padding: 30px 15px;
+    text-align: center;
+    color: white;
+    border-bottom: 5px solid #ffc6e1;
+}
+
+.logo {
+    font-size: 38px;
+    font-weight: 900;
+    text-shadow: 2px 3px #e66b9e;
+}
+
+header p {
+    margin-top: 8px;
+    font-weight: 700;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.wallet {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.wallet div {
+    background: white;
+    border: 2px solid #ffc4df;
+    padding: 15px 5px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 19px;
+    font-weight: 900;
+    box-shadow: 0 4px #f7c1da;
+    overflow-wrap: anywhere;
+}
+
+.welcome {
+    background: #ffe0ef;
+    border-radius: 25px;
+    padding: 25px 15px;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 2px dashed #f59dc6;
+}
+
+.welcome h2 {
+    color: #e46b9e;
+    margin-bottom: 8px;
+}
+
+.farm {
+    background: white;
+    border-radius: 30px;
+    padding: 25px 15px;
+    text-align: center;
+    border: 3px solid #ffc1dd;
+    box-shadow: 0 6px #f7c4dc;
+}
+
+.farm-title h2 {
+    color: #e66c9f;
+}
+
+.farm-title p {
+    margin: 8px;
+    color: #bd83a0;
+}
+
+.big-cat {
+    background: linear-gradient(145deg, #ffb9da, #ff8cbd);
+    border: 7px solid #ffe1ef;
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 8px #e98bb6, 0 0 30px #ffb4d6;
+    transition: .15s;
+    user-select: none;
+}
+
+.big-cat span {
+    font-size: 100px;
+}
+
+.big-cat p {
+    color: white;
+    font-weight: 900;
+    font-size: 12px;
+}
+
+.big-cat:hover {
+    transform: scale(1.05);
+}
+
+.big-cat:active {
+    transform: scale(.90);
+}
+
+.farm-info {
+    font-weight: 800;
+    margin: 15px;
+}
+
+.level {
+    margin: 15px;
+    font-weight: 900;
+    font-size: 19px;
+}
+
+.progress {
+    background: #ffe5f1;
+    height: 17px;
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 450px;
+    margin: auto;
+}
+
+#progressBar {
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(90deg, #ff8dbd, #ffb8da);
+    transition: .3s;
+}
+
+.panel {
+    background: white;
+    padding: 23px;
+    border-radius: 25px;
+    margin-top: 22px;
+    border: 2px solid #ffc4df;
+    box-shadow: 0 5px #f7d1e3;
+}
+
+.panel h2 {
+    color: #e66c9f;
+    margin-bottom: 10px;
+}
+
+.panel > p {
+    color: #bd83a0;
+    margin-bottom: 15px;
+}
+
+.egg-container, .shop-grid, .pet-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.item {
+    background: #fff0f7;
+    border: 2px solid #ffc4df;
+    border-radius: 18px;
+    padding: 15px 10px;
+    text-align: center;
+    transition: .2s;
+}
+
+.item:hover {
+    transform: translateY(-3px);
+    background: #ffe4f0;
+}
+
+.item .emoji {
+    font-size: 45px;
+    margin-bottom: 8px;
+}
+
+.item h3 {
+    color: #dc6b9d;
+    font-size: 15px;
+}
+
+.item p {
+    margin-top: 7px;
+    font-size: 13px;
+}
+
+.item button, .pink-button {
+    border: none;
+    background: linear-gradient(135deg, #ff9ec8, #f16da9);
+    color: white;
+    padding: 11px;
+    border-radius: 12px;
+    font-family: inherit;
+    font-weight: 900;
+    width: 100%;
+    margin-top: 12px;
+    cursor: pointer;
+    box-shadow: 0 3px #df77a7;
+}
+
+.item button:disabled {
+    background: #e6c4d5;
+    box-shadow: none;
+    cursor: not-allowed;
+}
+
+.pink-button {
+    max-width: 250px;
+    font-size: 16px;
+}
+
+.pet-card {
+    background: #fff0f7;
+    border: 2px solid #ffc4df;
+    border-radius: 18px;
+    padding: 12px;
+    text-align: center;
+}
+
+.pet-card .emoji {
+    font-size: 42px;
+}
+
+.pet-card button {
+    background: #ff8fbd;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    margin-top: 8px;
+    cursor: pointer;
+    font-weight: 800;
+    width: 100%;
+}
+
+.pet-card.equipped {
+    border: 3px solid #ed75aa;
+    background: #ffe0ef;
+}
+
+.rarity {
+    font-size: 12px;
+    font-weight: 900;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 30px 0;
+}
+
+footer button {
+    padding: 13px 20px;
+    border: none;
+    border-radius: 15px;
+    background: #ff92be;
+    color: white;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+#notification {
+    position: fixed;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ff86b9;
+    color: white;
+    padding: 13px 20px;
+    border-radius: 18px;
+    font-weight: 900;
+    display: none;
+    z-index: 100;
+    box-shadow: 0 4px #e76a9e;
+    text-align: center;
+    width: max-content;
+    max-width: 90%;
+}
+
+.float {
+    position: fixed;
+    pointer-events: none;
+    color: #ed6ea5;
+    font-size: 22px;
+    font-weight: 900;
+    animation: float 1s forwards;
+    z-index: 50;
+}
+
+@keyframes float {
+    to {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+}
+
+@media(max-width: 500px) {
+    main {
+        padding: 12px;
+    }
+
+    .logo {
+        font-size: 29px;
+    }
+
+    .wallet div {
+        font-size: 15px;
+    }
+
+    .big-cat {
+        width: 190px;
+        height: 190px;
+    }
+
+    .big-cat span {
+        font-size: 85px;
+    }
+
+    .panel {
+        padding: 16px;
+    }
+}
