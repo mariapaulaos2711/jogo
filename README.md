@@ -1,5 +1,5 @@
 
-# 🎀 Kitty Farm Simulator ♡
+# 🎀 Jogue Agora ♡
 
 🌸 **Bem-vindo ao Kitty Farm Simulator!** 🌸
 
